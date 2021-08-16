@@ -12,10 +12,10 @@ from config import Config
 from pyrogram.types import InlineKeyboardMarkup, InlineKeyboardButton
 
 
-BUTTON1="❤ GROUP ❤"
+BUTTON1="𝐅𝐇 𝐌𝐔𝐒𝐈𝐂𝐒🎶"
 B2="telegram.dog/liqwid_x"
-OWNER="Owner"
-GITCLONE="https://t.me/kurachkanjiedukkatte"
+OWNER="telegram.dog/fhmusics"
+GITCLONE="https://t.me/fhmusics"
 ABS="Developer"
 APPER="@fhmusics"
 
@@ -27,7 +27,7 @@ async def start(client, message):
                 [
                     InlineKeyboardButton(BUTTON1, url=GITCLONE)
                  ],[
-                    InlineKeyboardButton(OWNER, url=f"https://telegram.dog/{Config.OWNER}"),
+                    InlineKeyboardButton(OWNER, url=OWNER),
                     InlineKeyboardButton(ABS, url=B2)
             ]
           ]
@@ -76,11 +76,11 @@ def a(client, message):
 
         except Exception as e:
             print(e)
-            m.edit('**👎 Nothing to found 🥺 Try with another!**')
+            m.edit('**👎 Nothing Found 🥺 With This Name. Try with another!**')
             return
     except Exception as e:
         m.edit(
-            "**Found Nothing, Please Try Again**"
+            "**Search Not Found, Please Try Again**"
         )
         print(str(e))
         return
