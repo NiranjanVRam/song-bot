@@ -13,11 +13,11 @@ from pyrogram.types import InlineKeyboardMarkup, InlineKeyboardButton
 
 
 BUTTON1="📜 Source Code 📜"
-B2="telegram.dog/shamilhabeeb"
+B2="telegram.dog/liqwid_x"
 OWNER="Owner"
-GITCLONE="github.com/shamilhabeebnelli/song-bot"
+GITCLONE="https://t.me/kurachkanjiedukkatte"
 ABS="Developer"
-APPER="shamilhabeeb"
+APPER="@fhmusics"
 
 @Client.on_message(filters.command('start') & filters.private)
 async def start(client, message):
@@ -80,17 +80,17 @@ def a(client, message):
             return
     except Exception as e:
         m.edit(
-            "**found nothing, please try again**"
+            "**Found Nothing, Please Try Again**"
         )
         print(str(e))
         return
-    m.edit("**m.youtube.com responded, uploading...**")
+    m.edit("**Uploading... Please Wait..**")
     try:
         with youtube_dl.YoutubeDL(ydl_opts) as ydl:
             info_dict = ydl.extract_info(link, download=False)
             audio_file = ydl.prepare_filename(info_dict)
             ydl.process_info(info_dict)
-        rep = f'🎶 <b>Title:</b> <a href="{link}">{title}</a>\n⌚ <b>Duration:</b> <code>{duration}</code>\n📻 <b>Uploaded By:</b> <a href="https://t.me/mwklinks">[MwK] Song-Bot</a>'
+        rep = f'🎶 <b>Title:</b> <a href="{link}">{title}</a>\n⌚ <b>Duration:</b> <code>{duration}</code>\n📻 <b>Uploaded By:</b> <a href="https://t.me/fhmusics">𝐅𝐇 𝐌𝐔𝐒𝐈𝐂𝐒</a>'
         secmul, dur, dur_arr = 1, 0, duration.split(':')
         for i in range(len(dur_arr)-1, -1, -1):
             dur += (int(dur_arr[i]) * secmul)
@@ -98,7 +98,7 @@ def a(client, message):
         message.reply_audio(audio_file, caption=rep, parse_mode='HTML',quote=False, title=title, duration=dur, performer=performer, thumb=thumb_name)
         m.delete()
     except Exception as e:
-        m.edit('**An Internal error occured; Report This @redbullfed!!**')
+        m.edit('**An Internal error occured; Report This @fhhelperbot!!**')
         print(e)
     try:
         os.remove(audio_file)
