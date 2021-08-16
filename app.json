@@ -1,7 +1,7 @@
 {
     "name": "Song-Bot",
     "description": "A Modular telegram song bot.",
-    "repository": "https://github.com/shamilhabeebnelli/Song-Bot",
+    "repository": "https://github.com/NiranjanVRam/Song-Bot",
     "keywords": [
        
         "telegram bot",
@@ -19,15 +19,15 @@
         },
         "OWNER": {
             "description": "Your username without @.",
-            "value": "shamilhabeeb"
+            "value": "liqwid_x"
         },
         "START_MSG": {
             "description": "Start Message of BoT",
-            "value": "<b>Hi {},\nIam A Simple Youtube to Mp3 Downloader Bot,</b>\n\nSend me Any Songs name with /song command"
+            "value": "<b>Hi {},\nIam A Simple Song Downloader Bot,</b>\n\nSend me Any Songs name In @fhmusics"
         },
         "START_IMG": {
             "description": "Start Message's Photo.",
-            "value": "https://telegra.ph/file/2a35fca576aa49de77c98.jpg"
+            "value": "https://telegra.ph/file/66774148d9c45abb257e6.jpg"
         },
         "BOT_TOKEN": {
             "description": "ID of the message to edit.",
