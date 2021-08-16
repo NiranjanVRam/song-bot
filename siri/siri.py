@@ -12,7 +12,7 @@ from config import Config
 from pyrogram.types import InlineKeyboardMarkup, InlineKeyboardButton
 
 
-BUTTON1="📜 Source Code 📜"
+BUTTON1="❤ GROUP ❤"
 B2="telegram.dog/liqwid_x"
 OWNER="Owner"
 GITCLONE="https://t.me/kurachkanjiedukkatte"
@@ -45,7 +45,7 @@ THUMB="bit.ly/thumbnil"
 def a(client, message):
     query=message.text
     print(query)
-    m = message.reply('fetching datas from m.youtube.com')
+    m = message.reply('Searching... Downloading..')
     ydl_opts = {"format": "bestaudio[ext=m4a]"}
     try:
         results = []
@@ -69,7 +69,7 @@ def a(client, message):
             #     m.edit("Exceeded 30mins cap")
             #     return
 
-            performer = f"[SmL\MwK 🇮🇳]" 
+            performer = f"[© @fhmusics]" 
             thumb_name = f'thumb{message.message_id}.jpg'
             thumb = requests.get(thumbnail, allow_redirects=True)
             open(thumb_name, 'wb').write(thumb.content)
