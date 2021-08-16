@@ -16,7 +16,7 @@ BUTTON1="𝐅𝐇 𝐌𝐔𝐒𝐈𝐂𝐒🎶"
 B2="telegram.dog/liqwid_x"
 OWNER="Owner"
 GITCLONE="https://t.me/fhmusics"
-ABS="Developer"
+ABS="DEVELOPER"
 APPER="@fhmusics"
 
 @Client.on_message(filters.command('start') & filters.private)
