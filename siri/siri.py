@@ -14,7 +14,7 @@ from pyrogram.types import InlineKeyboardMarkup, InlineKeyboardButton
 
 BUTTON1="𝐅𝐇 𝐌𝐔𝐒𝐈𝐂𝐒🎶"
 B2="telegram.dog/liqwid_x"
-OWNER="telegram.dog/fhmusics"
+OWNER="t.me/fhmusics"
 GITCLONE="https://t.me/fhmusics"
 ABS="Developer"
 APPER="@fhmusics"
