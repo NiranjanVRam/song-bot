@@ -14,7 +14,7 @@ from pyrogram.types import InlineKeyboardMarkup, InlineKeyboardButton
 
 BUTTON1="𝐅𝐇 𝐌𝐔𝐒𝐈𝐂𝐒🎶"
 B2="telegram.dog/liqwid_x"
-OWNER="OWNER"
+OWNER="Owner"
 GITCLONE="https://t.me/fhmusics"
 ABS="Developer"
 APPER="@fhmusics"
@@ -27,7 +27,7 @@ async def start(client, message):
                 [
                     InlineKeyboardButton(BUTTON1, url=GITCLONE)
                  ],[
-                    InlineKeyboardButton(OWNER, url='https://t.me/fhmusics'),
+                    InlineKeyboardButton(OWNER, url=f"https://telegram.dog/fhmusics"),
                     InlineKeyboardButton(ABS, url=B2)
             ]
           ]
