@@ -84,7 +84,7 @@ def a(client, message):
         )
         print(str(e))
         return
-    m.edit("**Uploading... Please Wait..**")
+    m.edit("**Uploading... Please Wait..**\n\nTry To Include Artist Name Also For Accurate Results(If You Haven't)...")
     try:
         with youtube_dl.YoutubeDL(ydl_opts) as ydl:
             info_dict = ydl.extract_info(link, download=False)
@@ -98,7 +98,7 @@ def a(client, message):
         message.reply_audio(audio_file, caption=rep, parse_mode='HTML',quote=False, title=title, duration=dur, performer=performer, thumb=thumb_name)
         m.delete()
     except Exception as e:
-        m.edit('**An Internal error occured; Report This @fhhelperbot!!**')
+        m.edit('**An Internal error occured; Try Again!!**')
         print(e)
     try:
         os.remove(audio_file)
