@@ -84,7 +84,7 @@ def a(client, message):
         )
         print(str(e))
         return
-    m.edit("**Uploading... Please Wait..**\n\nTry To Include Artist Name Also For Accurate Results(If You Haven't)...")
+    m.edit("**Uploading... Please Wait..**\n\n__Try To Include Artist Name Also For Accurate Results(If You Haven't)...__")
     try:
         with youtube_dl.YoutubeDL(ydl_opts) as ydl:
             info_dict = ydl.extract_info(link, download=False)
