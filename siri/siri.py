@@ -76,15 +76,15 @@ def a(client, message):
 
         except Exception as e:
             print(e)
-            m.edit('**👎 Nothing Found 🥺 With This Name. Try with another!**')
+            m.edit('**👎 Nothing Found 🥺 With This Name. Try with another! Include Artist Name Also For Better Results.**')
             return
     except Exception as e:
         m.edit(
-            "**Search Not Found, Please Try Again**"
+            "**Search Not Found, Please Try Again!! Try To Include Artist Name Too..**"
         )
         print(str(e))
         return
-    m.edit("**Uploading... Please Wait..**\n\n__Try To Include Artist Name Also For Accurate Results(If You Haven't)...__")
+    m.edit("**Uploading... Please Wait..**\n\n__Try To Include Artist Name Also For Better Results(If You Haven't)...__")
     try:
         with youtube_dl.YoutubeDL(ydl_opts) as ydl:
             info_dict = ydl.extract_info(link, download=False)
