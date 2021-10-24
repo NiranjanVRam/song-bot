@@ -27,7 +27,7 @@
         },
         "START_IMG": {
             "description": "Start Message's Photo.",
-            "value": "https://telegra.ph/file/66774148d9c45abb257e6.jpg"
+            "value": "https://telegra.ph/file/040c516a381c87c6753a0.jpg"
         },
         "BOT_TOKEN": {
             "description": "ID of the message to edit.",
