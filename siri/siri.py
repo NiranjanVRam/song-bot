@@ -1,4 +1,4 @@
-# subinps, Shamilhabeebnelli 
+# subinps, Shamilhabeebnelli, liqwid
 
 from pyrogram import Client, filters
 
@@ -12,12 +12,12 @@ from config import Config
 from pyrogram.types import InlineKeyboardMarkup, InlineKeyboardButton
 
 
-BUTTON1="𝐅𝐇 𝐌𝐔𝐒𝐈𝐂𝐒🎶"
+BUTTON1="📜 Source Code 📜"
 B2="telegram.dog/liqwid_x"
 OWNER="Owner"
 GITCLONE="https://t.me/fhmusics"
-ABS="DEVELOPER"
-APPER="@fhmusics"
+ABS="Developer"
+APPER="fhmusics"
 
 @Client.on_message(filters.command('start') & filters.private)
 async def start(client, message):
@@ -69,22 +69,22 @@ def a(client, message):
             #     m.edit("Exceeded 30mins cap")
             #     return
 
-            performer = f"[© @fhmusics]" 
+            performer = f"[@fhmusics 🇮🇳]" 
             thumb_name = f'thumb{message.message_id}.jpg'
             thumb = requests.get(thumbnail, allow_redirects=True)
             open(thumb_name, 'wb').write(thumb.content)
 
         except Exception as e:
             print(e)
-            m.edit('**👎 Nothing Found 🥺 With This Name. Try another one! Include Artist Name Also For Better Results.**')
+            m.edit('**👎 Nothing found 🥺 with this name. Try another one! Include artist name also for better results.**')
             return
     except Exception as e:
         m.edit(
-            "**Search Not Found, Please Try Again!! Try To Include Artist Name Too..**"
+            "**Search not found, Please try again!! Try to include artist name too..**"
         )
         print(str(e))
         return
-    m.edit("**Uploading... Please Wait..**\n\n__Try To Include Artist Name Also For Better Results(If You Haven't)...__")
+    m.edit("**Uploading... Please wait..**\n\n__Try to include artist name also for better results(If you haven't)...__")
     try:
         with youtube_dl.YoutubeDL(ydl_opts) as ydl:
             info_dict = ydl.extract_info(link, download=False)
@@ -98,7 +98,7 @@ def a(client, message):
         message.reply_audio(audio_file, caption=rep, parse_mode='HTML',quote=False, title=title, duration=dur, performer=performer, thumb=thumb_name)
         m.delete()
     except Exception as e:
-        m.edit('**An Internal error occured; Try Again!!**')
+        m.edit('**An internal error occured; Try again or report this @fhhelperbot!!**')
         print(e)
     try:
         os.remove(audio_file)
